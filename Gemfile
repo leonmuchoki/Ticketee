@@ -38,6 +38,15 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  #rspec:put in group dev coz we need a generator from it to be availble in dev
+  gem "rspec-rails", "~> 3.2.1"
+end
+
+group :test do
+	#capybara:used for integration testing
+	#not in development coz it doesn't offer any generators that u need
+	gem "capybara", "~> 2.4"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
