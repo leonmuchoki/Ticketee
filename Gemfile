@@ -49,6 +49,9 @@ group :test do
 	#capybara:used for integration testing
 	#not in development coz it doesn't offer any generators that u need
 	gem "capybara", "~> 2.4"
+
+	#Factory to create example objects
+	gem "factory_girl_rails", "~>4.5"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
