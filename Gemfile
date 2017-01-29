@@ -43,6 +43,9 @@ gem "font-awesome-rails", "~> 4.3"
 #simple form
 gem "simple_form", "~> 3.1.0"
 
+#devise
+gem "devise", "~> 3.4.1"
+
 # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0', group: :development
 

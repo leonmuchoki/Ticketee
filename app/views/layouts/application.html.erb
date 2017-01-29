@@ -19,7 +19,11 @@
     <%= message %>
   </div>
 <% end %>
-
+<ul class="actions">
+  <li class="<%= "active" if current_page?("/users/sign_up") %>"></li>
+    <%= link_to "Sign up", new_user_registration_path %>
+  </li>
+</ul>
 <%= yield %>
 
 </div>
